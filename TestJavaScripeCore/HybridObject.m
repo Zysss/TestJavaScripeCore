@@ -15,8 +15,8 @@
 }
 
 - (void) testFunctionWithString:(JSValue *) string {
-//    NSArray *array = [JSContext currentArguments];
-//    JSValue *value = [JSContext currentCallee];
+   NSArray *array = [JSContext currentArguments];
+   JSValue *value = [JSContext currentCallee];
     NSLog(@"-----------%@,%@",NSStringFromSelector(_cmd),string);
 }
 

@@ -47,8 +47,6 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]]];
     JSContext *context=[self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     self.context = context;
-    NSArray *textArray;
-    NSArray *array = [textArray copy];
     //WKWebViewConfiguration *configration = [[ WKWebViewConfiguration alloc] init];
     //self.wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) configuration:configration];
     //self.wkWebView.UIDelegate = self;

@@ -14,9 +14,6 @@
     NSLog(@"-----------%@",NSStringFromSelector(_cmd));
 }
 
-- (void) testFunctionWithString:(JSValue *) string testString:(NSString *) string {
-    
-}
 - (void) testFunctionWithString:(JSValue *) string {
 //    NSArray *array = [JSContext currentArguments];
 //    JSValue *value = [JSContext currentCallee];

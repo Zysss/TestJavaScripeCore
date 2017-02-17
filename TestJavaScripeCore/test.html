@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iOS and Js</title>
+    <style type="text/css">
+      * {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    
+    <div style="margin-top: 100px">
+      <h1>Test JavaScriptCore</h1><br/>
+      <div><input type="button" value="call OC function" onclick="callOCFunction('aaa','bbb',123,43,[1,4,5])"></div>
+      <br/>
+    <br/>
+    <div>
+      <div><input type="button" value="Call Js Export " onclick="callJsExport()"></div><br/>
+      <div>Click here: <a href="http://www.baidu.com">Jump to Baidu</a></div>
+    </div>
+    
+    <br/>
+    
+    <script type="text/javascript">
+    function callJsAlert(obj) {
+        alert(obj);
+    }
+    
+    function callJsExport() {
+        if (obj) {
+            obj.testFunction();
+            obj.testFunctionWithStringTestString('hahah','hahah');
+            alert(obj.testFunctionToString());
+        }
+    }
+    
+    function callJsInput() {
+    }
+      </script>
+  </body>
+</html>

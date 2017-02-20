@@ -47,11 +47,11 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]]];
     JSContext *context=[self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     self.context = context;
-    //WKWebViewConfiguration *configration = [[ WKWebViewConfiguration alloc] init];
-    //self.wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) configuration:configration];
-    //self.wkWebView.UIDelegate = self;
-    //self.wkWebView.navigationDelegate = self;
-    //[self.view addSubview:self.wkWebView];
+    WKWebViewConfiguration *configration = [[ WKWebViewConfiguration alloc] init];
+    self.wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) configuration:configration];
+    self.wkWebView.UIDelegate = self;
+    self.wkWebView.navigationDelegate = self;
+    [self.view addSubview:self.wkWebView];
     
     //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"testWebView" ofType:@"html"]]]];
     
